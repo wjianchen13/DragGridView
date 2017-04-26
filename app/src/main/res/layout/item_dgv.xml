@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlyt_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/subscribe_item_bg"
+    android:minHeight="120.0dp"
+    android:minWidth="72.0dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/icon_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_new"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/jwyy_item_text_color"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_item"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/text_item"
+            android:layout_below="@id/icon_new"
+            android:background="@drawable/subscribe_item_bg"
+            android:gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>
